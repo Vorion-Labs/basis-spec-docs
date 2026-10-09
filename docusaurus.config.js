@@ -38,12 +38,12 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          editUrl: 'https://github.com/voriongit/basis-spec-docs/tree/main/',
+          editUrl: 'https://github.com/Vorion-Labs/basis-spec-docs/tree/main/',
           routeBasePath: '/',
         },
         blog: {
           showReadingTime: true,
-          editUrl: 'https://github.com/voriongit/basis-spec-docs/tree/main/',
+          editUrl: 'https://github.com/Vorion-Labs/basis-spec-docs/tree/main/',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -122,7 +122,7 @@ const config = {
             position: 'left',
           },
           {
-            href: 'https://github.com/voriongit/basis-spec-docs',
+            href: 'https://github.com/Vorion-Labs/basis-spec-docs',
             label: 'GitHub',
             position: 'right',
           },
@@ -169,7 +169,7 @@ const config = {
             title: 'Community',
             items: [
               { label: 'Discord', href: 'https://discord.gg/k9tHbNvcX' },
-              { label: 'GitHub', href: 'https://github.com/voriongit/basis-spec-docs' },
+              { label: 'GitHub', href: 'https://github.com/Vorion-Labs/basis-spec-docs' },
               { label: 'Blog', to: '/blog' },
               { label: 'Twitter', href: 'https://twitter.com/BASISprotocol' },
             ],
