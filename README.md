@@ -6,11 +6,11 @@ This repo is the Docusaurus site for the BASIS specification, served at https://
 
 ## Provenance
 
-Extracted from the `voriongit/vorion` monorepo on 2026-04-22.
+Extracted from the `Vorion-Labs/vorion` monorepo on 2026-04-22.
 
 - **Source path**: `docs/basis-docs/`
 - **Source commit**: `3d7ed92d6dba5705bcdd3f951dbd8929eb2f9a3a`
-- **Method**: clean-snapshot extraction (no history carved). The original commit history remains accessible in the monorepo at `voriongit/vorion`.
+- **Method**: clean-snapshot extraction (no history carved). The original commit history remains accessible in the monorepo at `Vorion-Labs/vorion`.
 
 This repo is now the canonical home for the BASIS spec site.
 
@@ -65,7 +65,7 @@ Apache-2.0 — see [LICENSE](./LICENSE).
 
 ---
 
-_Part of the [voriongit](https://github.com/voriongit) polyrepo ecosystem. See [voriongit/vorion-core](https://github.com/voriongit/vorion-core) for shared packages._
+_Part of the [Vorion-Labs](https://github.com/Vorion-Labs) polyrepo ecosystem. See [Vorion-Labs/vorion-core](https://github.com/Vorion-Labs/vorion-core) for shared packages._
 
 ## Deploying
 
