@@ -93,8 +93,8 @@ const config = {
             position: 'left',
           },
           {
-            to: '/spec',
-            label: 'Spec 0.9',
+            to: '/spec/overview',
+            label: 'Spec',
             position: 'left',
           },
           {

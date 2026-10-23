@@ -6,6 +6,10 @@ description: Enterprise AI Agent Governance Platform
 
 # Vorion Platform
 
+:::note Status
+The hosted Vorion Platform isn't available yet; this page describes the planned product, and its API and SDK examples show the intended surface. To evaluate BASIS today, run [`@vorionsys/gate-core`](https://www.npmjs.com/package/@vorionsys/gate-core) locally and check its records with [`@vorionsys/verify`](https://www.npmjs.com/package/@vorionsys/verify), or try [demo.vorion.org](https://demo.vorion.org).
+:::
+
 ## Enterprise AI Agent Governance Platform
 
 **Deploy governed AI agents with trust scoring, policy enforcement, and complete auditability.**
@@ -206,16 +210,6 @@ curl https://api.vorion.org/v1/verify/ag_vendor_agent
 
 ---
 
-## Pricing
-
-| Plan | Agents | Features | Price |
-|------|--------|----------|-------|
-| **Starter** | Up to 5 | Trust scoring, basic audit | $299/mo |
-| **Professional** | Up to 25 | + Policy engine, API access | $999/mo |
-| **Enterprise** | Unlimited | + SSO, SLA, dedicated support | Custom |
-
----
-
 ## API Overview
 
 ```yaml
@@ -244,10 +238,10 @@ GET  /v1/audit/export        # Export audit logs
 
 ## Get Started
 
-- **Free Trial**: [Book a Demo](https://calendly.com/ryan-vorion)
+- **Talk to us**: [Book a call](https://calendly.com/ryan-vorion)
 - **Documentation**: [basis.vorion.org](https://basis.vorion.org)
 - **API Reference**: [basis.vorion.org/spec/overview](https://basis.vorion.org/spec/overview)
-- **Enterprise Demo**: [vorion.org/demo](https://vorion.org/demo)
+- **Live demo**: [demo.vorion.org](https://demo.vorion.org)
 
 ---
 
