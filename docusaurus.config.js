@@ -94,7 +94,7 @@ const config = {
           },
           {
             to: '/spec/overview',
-            label: 'Spec',
+            label: 'Spec 0.9',
             position: 'left',
           },
           {
