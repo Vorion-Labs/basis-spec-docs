@@ -6,7 +6,9 @@ description: Full BASIS technical specification
 
 # BASIS Specification
 
-## Version 1.2.0 (Draft)
+## Revision 0.9 (working draft)
+
+BASIS is at revision 0.9, a working draft; 1.0 is targeted for 2027. The constants and schemas it describes ship as [`@vorionsys/basis-spec`](https://www.npmjs.com/package/@vorionsys/basis-spec) on npm, which versions independently of the standard revision; 1.3.0 is current.
 
 **Baseline Authority for Safe & Interoperable Systems**
 
@@ -94,14 +96,10 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHOULD", "RECOMMENDED", 
 
 ---
 
-## Version History
+## Versioning
 
-| Version | Date | Changes |
-|---------|------|---------|
-| 1.0.0 | 2025-06 | Initial release |
-| 1.1.0 | 2025-09 | Added trust tiers |
-| 1.2.0 | 2026-01 | Enhanced audit requirements |
+The standard is at revision 0.9, a working draft, and changes through the public RFC process in [vorionsys/basis-spec](https://github.com/vorionsys/basis-spec/tree/main/rfcs). The machine-readable package, [`@vorionsys/basis-spec`](https://www.npmjs.com/package/@vorionsys/basis-spec), has its own semver releases (currently 1.3.0); see its changelog for what changed in each.
 
 ---
 
-*Full specification source: [GitHub](https://github.com/vorionsys/basis-standard)*
+*Specification source: [github.com/vorionsys/basis-spec](https://github.com/vorionsys/basis-spec)*

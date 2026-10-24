@@ -13,6 +13,8 @@
     { "source": "/proof", "destination": "/layers/proof", "permanent": true },
     { "source": "/chain", "destination": "/layers/chain", "permanent": true },
     { "source": "/car", "destination": "/layers/car", "permanent": true },
-    { "source": "/intent", "destination": "/layers/intent", "permanent": true }
+    { "source": "/intent", "destination": "/layers/intent", "permanent": true },
+    { "source": "/design/spec", "destination": "/spec/overview", "permanent": false },
+    { "source": "/design/spec.html", "destination": "/spec/overview", "permanent": false }
   ]
 }
