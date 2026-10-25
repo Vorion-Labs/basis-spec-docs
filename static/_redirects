@@ -1,0 +1,9 @@
+# Ported from vercel.json on 2026-10-25, with the same status codes:
+# 308 where Vercel had permanent: true, 307 where it had permanent: false.
+/enforce           /layers/enforce  308
+/proof             /layers/proof    308
+/chain             /layers/chain    308
+/car               /layers/car      308
+/intent            /layers/intent   308
+/design/spec       /spec/overview   307
+/design/spec.html  /spec/overview   307
