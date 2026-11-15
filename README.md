@@ -2,7 +2,7 @@
 
 BASIS — Baseline Authority for Safe & Interoperable Systems. The open standard for AI agent governance.
 
-This repo is the Docusaurus site for the BASIS specification, served at https://basis.vorion.org.
+This repo is the Docusaurus site for the BASIS specification, served at https://basis.vorion.org. It is hosted on Cloudflare Workers (static assets) as the worker `basis-spec-docs`, also reachable at https://basis-spec-docs.racason.workers.dev.
 
 ## Provenance
 
@@ -20,7 +20,7 @@ This repo is now the canonical home for the BASIS spec site.
 - 1 blog post (`blog/`)
 - Custom homepage components (`src/components/`)
 - Static assets (`static/img/`)
-- Vercel config (`vercel.json`) — `git.deploymentEnabled: false` (CLI-only deploys)
+- Cloudflare Workers config (`wrangler.jsonc`) and redirects (`static/_redirects`)
 
 An `/implementations` section absorbing `voriongit/basis-directory` is planned in a follow-up — see the merger strategy in `voriongit-ops/_design/`.
 
@@ -46,14 +46,18 @@ npm run build
 
 Output is written to `build/`.
 
-## Deploy (Vercel, CLI-only)
+## Deploy (Cloudflare Workers)
+
+The built site in `build/` is served by Cloudflare Workers static assets (no Worker script). `static/_redirects` is copied into `build/` and Workers applies it; unknown paths get Docusaurus's `404.html`.
 
 ```bash
-npm run build
-vercel --prod
+npm run preview:cf   # build, then serve locally with wrangler dev
+npm run deploy:cf    # build, then deploy (run `npx wrangler login` first)
 ```
 
-Per `voriongit-ops/_design/feedback_vercel_deploy.md`, deploys are CLI-only — Vercel's git integration is disabled in `vercel.json`.
+Or from GitHub: add the `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID` repository secrets and run the **Deploy to Cloudflare** workflow by hand. Deploys are manual only; there is no deploy on push.
+
+Once deployed, the worker serves the site at https://basis-spec-docs.racason.workers.dev. To serve it at basis.vorion.org, add that hostname as a Custom Domain on the `basis-spec-docs` worker in the Cloudflare dashboard.
 
 ## CI
 
@@ -66,17 +70,3 @@ Apache-2.0 — see [LICENSE](./LICENSE).
 ---
 
 _Part of the [Vorion-Labs](https://github.com/Vorion-Labs) polyrepo ecosystem. See [Vorion-Labs/vorion-core](https://github.com/Vorion-Labs/vorion-core) for shared packages._
-
-## Deploying
-
-This repo is CLI-deployed to the Vercel project **basis-docs** (no git-auto):
-
-```bash
-npx vercel deploy --prod --yes
-# then re-point the domain — the basis.vorion.org alias is deployment-pinned:
-npx vercel alias set <new-deployment-url> basis.vorion.org --scope vorionsys
-```
-
-Skip the alias step and basis.vorion.org keeps serving the previous deployment.
-(Permanent fix: move the domain to the basis-docs project in the Vercel dashboard,
-then aliases follow production automatically.)
