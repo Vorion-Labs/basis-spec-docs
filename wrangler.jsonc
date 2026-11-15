@@ -1,0 +1,12 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "basis-spec-docs",
+  "compatibility_date": "2026-11-01",
+  // Static site: no Worker script. Workers static assets serve ./build and
+  // honour build/_redirects (copied from static/_redirects by Docusaurus).
+  "assets": {
+    "directory": "./build",
+    "not_found_handling": "404-page"
+  },
+  "workers_dev": true
+}
